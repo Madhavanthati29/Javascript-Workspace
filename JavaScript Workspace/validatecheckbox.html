@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <style>
+            body
+            {
+                background-color: cyan;
+            }
+        </style>
+            <script>
+                function validate()
+                {
+                    if(document.f1.chk1.checked==false)
+                    {
+                        alert("Please select a checkbox");
+                        return false;
+                    }
+                    else
+                    {
+                        alert("One position is selected");
+                        return true;
+                    }
+                }
+            </script>
+    </head>
+    <body>
+        <form name="f1" method="get" action="a.html" onsubmit="return validate();">
+            <input type="checkbox" id="chk1"/>
+            Do you want to accept ?
+            <input type="submit" name="submit" value="SUBMIT"/>
+            <input type="reset" name="reset" value="RESET"/>
+        </form>
+    </body>
+</html>
